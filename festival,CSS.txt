@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fffdf9;
+  color: #333;
+  text-align: center;
+}
+
+/* Encabezado */
+header {
+  background: linear-gradient(to right, #d32f2f, #f57c00);
+  color: white;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 50px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 300;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Imagen principal */
+.imagen img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Detalles */
+.detalles {
+  padding: 30px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.detalles h3 {
+  color: #d32f2f;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.categorias {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.descripcion {
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+/* Pie de página */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 30px;
+}
