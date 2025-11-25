@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Festival de México en el Centro Histórico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Festival de México en el Centro Histórico</h1>
+    <h2>Descubre la cultura e historia mexicana</h2>
+  </header>
+
+  <section class="imagen">
+    <img src="https://cdn.britannica.com/07/199707-050-6BDEB01C/dancers-traditional-costume-festival-Mexico-City.jpg" alt="Festival de México">
+  </section>
+
+  <section class="detalles">
+    <h3>Categoría:</h3>
+    <p class="categorias">Parejas • Familias • Historia • Vida nocturna</p>
+
+    <p class="descripcion">
+      El <strong>Festival de México en el Centro Histórico</strong> es una celebración cultural que muestra la rica historia de la Ciudad de México a través de las artes escénicas y exposiciones fascinantes.  
+      Este evento anual se celebra en marzo, en el corazón del centro histórico, y cuenta con presentaciones de danza, música y teatro.  
+      Es una experiencia única que combina arte, tradición y vida nocturna en un solo lugar.
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Festival de México | Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página adaptable</title>
+
+  <style>
+    /* Reset básico */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* Variables y base */
+    :root{
+      --max-width: 1200px;
+      --gap: 1rem;
+      --bg: #f7f7f7;
+      --card: #ffffff;
+      --text: #222;
+      --accent: #6b46c1;
+      --fs-base: 16px; /* tamaño base */
+    }
+
+    html { font-size: var(--fs-base); -webkit-font-smoothing:antialiased; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.4;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Contenedor central */
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 1rem;
+      gap: var(--gap);
+    }
+
+    /* Header / Nav responsive */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: .75rem;
+      margin-bottom: 1rem;
+    }
+    .brand { font-weight: 700; font-size: 1.25rem; color: var(--accent); }
+    nav {
+      display: flex;
+      gap: .5rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      padding: .5rem .75rem;
+      border-radius: .5rem;
+      background: transparent;
+      color: var(--text);
+    }
+
+    /* Layout principal: grid adaptable */
+    main {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    /* Card ejemplo */
+    .card {
+      background: var(--card);
+      padding: 1rem;
+      border-radius: .75rem;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+    }
+
+    /* Imagen responsiva */
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: .5rem;
+    }
+
+    /* Grid para contenido (se vuelve 2 o 3 columnas según ancho) */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      font-size: .9rem;
+      color: #666;
+    }
+
+    /* Media queries (puntos de quiebre recomendados) */
+    @media (min-width: 640px) { /* tablets vertical */
+      .grid { grid-template-columns: repeat(2, 1fr); }
+      header .brand { font-size: 1.4rem; }
+    }
+
+    @media (min-width: 900px) { /* tablets horizontales / laptop */
+      main { grid-template-columns: 2fr 1fr; } /* contenido + sidebar */
+      .grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    @media (min-width: 1100px) { /* escritorio grande */
+      :root { --max-width: 1400px; }
+    }
+
+    /* Tip: texto escalable */
+    h1 { font-size: clamp(1.25rem, 2.5vw, 2rem); margin-bottom:.5rem; }
+    p { margin-bottom:.75rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">MiSitio</div>
+      <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card hero">
+        <h1>Título adaptable</h1>
+        <p>Esta sección es un ejemplo de contenido que se ajusta según el ancho de pantalla.</p>
+        <img src="https://via.placeholder.com/1200x500" alt="Imagen ejemplo">
+      </section>
+
+      <aside class="card">
+        <h2>Sidebar</h2>
+        <p>Información adicional, enlaces o formulario breve.</p>
+      </aside>
+
+      <section class="card grid" style="grid-column: 1 / -1;">
+        <div><h3>Bloque 1</h3><p>Contenido.</p></div>
+        <div><h3>Bloque 2</h3><p>Contenido.</p></div>
+        <div><h3>Bloque 3</h3><p>Contenido.</p></div>
+      </section>
+
+      <section class="card" style="grid-column: 1 / -1;">
+        <h2>Otro contenido</h2>
+        <p>Más texto que se adapta de forma natural.</p>
+      </section>
+
+    </main>
+
+    <footer class="card">
+      © 2025 — MiSitio. Diseño responsive.
+    </footer>
+  </div>
+</body>
+</html>
+
